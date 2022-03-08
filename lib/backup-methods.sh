@@ -976,7 +976,7 @@ function backup_method_pgsql()
 function backup_method_mysql()
 {
     method="$1"
-    mysql_conffile="$HOME/.backup-manager_my.cnf"
+    mysql_conffile="$HOME/.backup-manager_my_$BM_MYSQL_HOST.cnf"
 
     debug "backup_method_mysql ($method)"
 
